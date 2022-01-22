@@ -10,6 +10,7 @@
 #zero{
     background-color: black;
     font: var(--fontes);
+    border: 1px solid white;
 }
 #one{
     position: absolute;
