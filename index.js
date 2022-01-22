@@ -1,6 +1,32 @@
 const local = window.document.getElementById("zero");
 const lugar_background = window.document.getElementById("one");
-
+const conversor = {
+    dia: function (v) {
+        switch (v) {
+            case 0:
+                return "Sunday";
+                break
+            case 1:
+                return "Monday";
+                break
+            case 2:
+                return "Tuesday";
+                break
+            case 3:
+                return "Wednesday";
+                break
+            case 4:
+                return "Thuesday";
+                break
+            case 5:
+                return "Friday";
+                break
+            case 6:
+                return "Saturday";
+                break
+        }
+    }
+}
 var control = setInterval(() => {
     let time = new Date();
     let hor = time.getHours();
