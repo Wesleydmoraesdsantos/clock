@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
+:root{
+    --fontes: italic bold 1em 'Lobster Two', cursive;
+}
+#zero{
+    background-color: black;
+    color: white;
+    font: var(--fontes);
+}
+#one{
+    position: absolute;
+    width: 80%;
+    height:88%;
+    background-color: black;
+    background-position: center center;
+}
+#corpo{
+    position: relative;
+    height:90vh;
+}
