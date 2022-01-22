@@ -3,9 +3,12 @@
 :root{
     --fontes: italic bold 1em 'Lobster Two', cursive;
 }
+*{
+    color: white;
+    margin: 0px;
+}
 #zero{
     background-color: black;
-    color: white;
     font: var(--fontes);
 }
 #one{
@@ -14,8 +17,11 @@
     height:88%;
     background-color: black;
     background-position: center center;
+    text-align: center;
 }
 #corpo{
     position: relative;
-    height:90vh;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
 }
