@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
 :root{
     --fontes: italic bold 1.8em 'Lobster Two', cursive;
+    --fontes2: italic bold 1em 'Lobster Two', cursive;
 }
 *{
-    color: rgb(127, 57, 207);
+    color: rgb(255, 255, 255);
     margin: 0px;
 }
 #zero{
@@ -24,7 +25,6 @@
     height:88%;
     top: 50%;
     left: 50%;
-    background-color: black;
     transform: translate(-50%,-50%);
 }
 #corpo{
@@ -37,4 +37,13 @@
     width: 100%;
     height: 100%;
     position: relative;
+}
+.imgb{
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+@media (max-width: 250px) {
+    #zero{
+        font: var(--fontes2);
+    }
 }

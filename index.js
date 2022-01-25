@@ -77,7 +77,7 @@ var control = setInterval(() => {
     let mon = time.getMonth();
     let year = time.getFullYear();
 
-    background(hor);
+    background(22);
     if (hor < 10) {
         hor = `0${hor}`;
     }
@@ -102,12 +102,11 @@ function background(v) {
     console.log("ok");
     if (v >= 6 && v < 12) {
         lugar_background.style.backgroundImage = "url(./img/day.jpg)";
-        console.log("day");
     } else if (v >= 12 && v < 18) {
         lugar_background.style.background= "url(./img/afternoon.jpg)";
-        console.log("afternoon");
-    } else if (v >= 18 && v < 6) {
+    } else if (v >= 18 || v < 6) {
         lugar_background.style.backgroundImage = "url(./img/night.jpg)";
-        console.log("night");
     }
+    lugar_background.style.backgroundSize="100% 100%";
+    lugar_background.style.backgroundRepeat="no-repeat";
 }
