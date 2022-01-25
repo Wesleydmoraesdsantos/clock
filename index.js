@@ -77,7 +77,7 @@ var control = setInterval(() => {
     let mon = time.getMonth();
     let year = time.getFullYear();
 
-    background(22);
+    background(hor);
     if (hor < 10) {
         hor = `0${hor}`;
     }
