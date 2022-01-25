@@ -25,6 +25,46 @@ const conversor = {
                 return "Saturday";
                 break
         }
+    },
+    mes: function (x) {
+        switch (x) {
+            case 0:
+                return "January";
+                break
+            case 1:
+                return "February";
+                break
+            case 2:
+                return "March";
+                break
+            case 3:
+                return "April";
+                break
+            case 4:
+                return "May";
+                break
+            case 5:
+                return "June";
+                break
+            case 6:
+                return "July";
+                break
+            case 7:
+                return "August";
+                break
+            case 8:
+                return "September";
+                break
+            case 9:
+                return "October";
+                break
+            case 10:
+                return "November";
+                break
+            case 11:
+                return "December";
+                break
+        }
     }
 }
 var control = setInterval(() => {
@@ -46,7 +86,7 @@ var control = setInterval(() => {
     if (sec < 10) {
         sec = `0${sec}`;
     }
-    local.innerHTML = `${hor} : ${min} : ${sec} <br> ${day} / ${mon} / ${year}`;
+    local.innerHTML = `${hor} : ${min} : ${sec} <br> ${day} / ${mon} / ${year}<br><small>${conversor.dia(day)} in ${conversor.mes(mon)}</small>`;
 }, 1000);
 function background(v) {
     console.log("ok");
