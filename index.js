@@ -72,7 +72,8 @@ var control = setInterval(() => {
     let hor = time.getHours();
     let min = time.getMinutes();
     let sec = time.getSeconds();
-    let day = time.getDay();
+    let day = time.getDate();
+    let dat = time.getDay();
     let mon = time.getMonth();
     let year = time.getFullYear();
 
@@ -86,7 +87,16 @@ var control = setInterval(() => {
     if (sec < 10) {
         sec = `0${sec}`;
     }
-    local.innerHTML = `${hor} : ${min} : ${sec} <br> ${day} / ${mon} / ${year}<br><small>${conversor.dia(day)} in ${conversor.mes(mon)}</small>`;
+    //mes dia
+    let day_txt = dat;
+    let mon_txt = mon;
+    if (day < 10) {
+        day = `0${day}`;
+    }
+    if (mon < 10) {
+        mon = `0${++mon}`;
+    }
+    local.innerHTML = `${hor} : ${min} : ${sec} <br> ${day} / ${mon} / ${year}<br><small>${conversor.dia(day_txt)} in ${conversor.mes(mon_txt)}</small>`;
 }, 1000);
 function background(v) {
     console.log("ok");
